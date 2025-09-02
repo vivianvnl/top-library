@@ -26,12 +26,14 @@ myLibrary.forEach(item => {
   const book = document.createElement('div');
   
   book.innerHTML = `
-        <h3>${item.title}</h3>
-        <p>Author: ${item.author}</p>
-        <p>Pages: ${item.pages}</p>
-        <p>Read? ${item.read}</p>
+        <h2>${item.title}</h2>
+        <ul>
+          <li><p>Author: ${item.author}</p></li>
+          <li><p>Pages: ${item.pages}</p></li>
+          <li><p>Read? ${item.read}</p></li>
+        </ul>
     `;
 
-  book.classList.add = 'books';
+  book.classList.add('books');
   container.appendChild(book);
 });
