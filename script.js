@@ -23,6 +23,7 @@ function addBookToLibrary(title, author, pages) {
         </ul>
     `;
   let label = document.createElement("label");
+  label.setAttribute("id", "label");
   label.textContent = "Read?";
   let readCheckbox = document.createElement("input");
   readCheckbox.setAttribute("type", "checkbox");
@@ -48,7 +49,7 @@ addBookToLibrary('My Brilliant Friend', 'Elena Ferrante', 331)
 console.log(myLibrary);
 
 
-const showButton = document.getElementById('showDialog');
+const showButton = document.getElementById('addNewBookBtn');
 const dialog = document.querySelector('dialog');
 const addBookBtn = dialog.querySelector("#addBookBtn");
 const form = document.querySelector('form');

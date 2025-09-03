@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap');
+
 :root {
-    font: 16px 'Roboto', sans-serif;
+    font: 18px "Quantico", sans-serif;
+    font-weight: 450;
+    letter-spacing: 0.2px;
 }
 
 * {
@@ -7,46 +11,138 @@
     margin: 0;
 }
 
-body {
-    background-color: lightgreen;
+button:hover, button:active, #addNewBookBtn, .books, dialog, header {
+    background-color: blue;
 }
 
-header {
-    background-color: salmon;
-    color: white;
-    
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-#container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-
-    padding: 20px 0;
-}
-
-.books {
+#addNewBookBtn:hover, #addNewBookBtn:active, button {
     background-color: skyblue;
-    border: 5px solid blue;
-    border-radius: 10px;
-    width: 200px;
-    height: 300px;
+}
 
-    padding: 20px;
+body {
+    background-color: rgb(212, 231, 238);
+}
+
+h1, button, .books, dialog {
+    color: white;
+}
+
+h1, h2, dialog, button {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+}
+
+button, input {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow:
+    -2px -1px 0 black,  /* Top-left shadow */
+     1px -1px 0 black,  /* Top-right shadow */
+    -1px  2px 0 black,  /* Bottom-left shadow */
+     1px  1px 0 black;  /* Bottom-right shadow */
 }
 
 h2 {
     padding-bottom: 10px;
+    letter-spacing: 0;
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 5px;
 }
 
 li {
-    padding: 5px 0;
+    padding: 4px 0;
+    line-height: 25px;
+}
+
+header, main {
+    display: flex;
+}
+
+header, #container {
+    justify-content: center;
+}
+
+header {
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.75);
+    padding: 40px 20px;
+    z-index: 1;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: 2px ridge white;
+    border-radius: 10px;
+    text-shadow:
+    -1px -1px 0 black,  /* Top-left shadow */
+     1px -1px 0 black,  /* Top-right shadow */
+    -1px  1px 0 black,  /* Bottom-left shadow */
+     1px  1px 0 black;  /* Bottom-right shadow */
+    letter-spacing: 0.2px;
+    margin: 15px 0;
+    padding: 5px 20px 8px;   
+}
+
+button, .books, h1 {
+    transition: transform 0.2s ease;
+}
+
+h1:hover, h1:active, 
+button:hover, button:active, 
+.books:hover, .books:active {
+    transform: scale(1.05);
+}
+
+#addNewBookBtn {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    width: auto;
+    margin: 25px 0 10px;
+    padding: 10px 25px 12px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.books {
+    border: 5px solid skyblue;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 350px;
+
+    padding: 20px;
+}
+
+#readCheckbox {
+    transform: scale(1.25);
+    margin-left: 10px;
+}
+
+dialog {
+    justify-self: center;
+    align-self: center;
+    top: -450px;
+    font-size: 20px;
+}
+
+fieldset > div {
+    padding: 5px;
+}
+
+input {
+    padding: 2px;
 }

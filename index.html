@@ -11,33 +11,35 @@
     <header>
         <h1>Library</h1>
     </header>
-    <dialog>
-        <form method="dialog">
-            <legend>Add a Book!</legend>
-            <fieldset>
-                <div>
-                    <label for="title">Book title:</label>
-                    <input type="text" name="title" id="title">
-                </div>
-                <div>
-                    <label for="author">Book author:</label>
-                    <input type="text" name="author" id="author">
-                </div>
-                <div>
-                    <label for="pages">Number of pages:</label>
-                    <input type="text" name="pages" id="pages">
-                </div>
-            </fieldset>
+    <main>
+        <dialog>
+            <form method="dialog">
+                <legend>Add a Book!</legend>
+                <fieldset>
+                    <div>
+                        <label for="title">Book title:</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label for="author">Book author:</label>
+                        <input type="text" name="author" id="author">
+                    </div>
+                    <div>
+                        <label for="pages">Number of pages:</label>
+                        <input type="text" name="pages" id="pages">
+                    </div>
+                </fieldset>
 
-            <div>
-                <button value="cancel" formmethod="dialog">Cancel</button>
-                <button type="submit" id="addBookBtn" value="default">Add Book</button>
-            </div>
-        </form>
-    </dialog>
+                <div>
+                    <button value="cancel" formmethod="dialog">Cancel</button>
+                    <button type="submit" id="addBookBtn" value="default">Add Book</button>
+                </div>
+            </form>
+        </dialog>
 
-    <button id="showDialog">Add New Book</button>
-    
-    <div id="container"></div>
+        <button id="addNewBookBtn">Add New Book</button>
+        
+        <div id="container"></div>
+    </main>
 </body>
 </html>
