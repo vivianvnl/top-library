@@ -1,0 +1,3 @@
+This project really challenged me! The object constructors weren't too hard to understand but creating DOM elements bassed on objects was very for me to figure out for a while. I also felt integrating a form with the DOM was difficult to understand for a while. Luckily, I figured it out and evrything else came easily! A little challenging start to the JavaScript course, but I'm determined to learn more!
+
+Overall, took me about 6 hours to complete.
