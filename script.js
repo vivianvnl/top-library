@@ -22,15 +22,13 @@ function addBookToLibrary(title, author, pages) {
           <li><p>Pages: ${pages}</p></li>
         </ul>
     `;
-
+  let label = document.createElement("label");
+  label.textContent = "Read?";
   let readCheckbox = document.createElement("input");
   readCheckbox.setAttribute("type", "checkbox");
   readCheckbox.setAttribute("id", "readCheckbox");
-  let label = document.createElement("label");
-  label.setAttribute("for", "readCheckbox");
-  label.textContent = "Read?";
-  book.appendChild(readCheckbox);
   book.appendChild(label);
+  label.appendChild(readCheckbox);
 
   book.innerHTML += '<br>';
 
